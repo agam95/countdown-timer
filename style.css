@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/bg-stars.svg");
+  background-color: hsl(234, 17%, 12%);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.countdown-body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.countdown-body .header {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 5px;
+  margin-bottom: 7rem;
+}
+
+.counter {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.days .box,
+.hours .box,
+.minutes .box,
+.seconds .box {
+  border: 1px solid white;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
