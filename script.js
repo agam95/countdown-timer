@@ -1,12 +1,11 @@
-// Set the date we're counting down to
-
-//Count current date in milliseconds
+//Target date in milliseconds
 const countDownDate = new Date("Jan 31, 2022 15:37:25").getTime();
 
 let x = setInterval(() => {
-  //Count remaining date in milliseconds
+  //Today date in milliseconds
   const today = new Date().getTime();
 
+  // Difference of target date to todays date
   let distance = countDownDate - today;
 
   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -22,8 +21,3 @@ let x = setInterval(() => {
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
-
-const today = new Date().getTime();
-
-let distance = countDownDate - today;
-console.log(distance);
